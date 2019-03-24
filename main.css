@@ -11,6 +11,10 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #FFA515;
+}
+
 nav {
   background-color: #2C2C2C;
   height: 60px;
@@ -36,8 +40,8 @@ nav ul li a {
 }
 
 main {
-  background-color: #FFA515;
-  height: calc(100vh - 60px);
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 main #headings {
@@ -54,13 +58,15 @@ main #headings {
 }
 
 main #headings #mixer {
-  font-size: 10em;
+  font-size: calc(5vw + 5em);
   font-weight: 800;
 }
 
 main #headings #i-have {
   font-size: 3em;
-  display: none;
+  border-bottom: 5px solid #2C2C2C;
+  line-height: 0.9em;
+  width: 7em;
 }
 
 main #grid {
@@ -104,10 +110,6 @@ main #buttons {
           align-items: baseline;
 }
 
-main #buttons #right-buttons {
-  display: none;
-}
-
 .btn {
   background-color: #2C2C2C;
   border: none;
@@ -116,6 +118,15 @@ main #buttons #right-buttons {
   width: 80px;
   font-size: 1em;
   cursor: pointer;
+}
+
+.spirit-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2C2C2C;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .show {

@@ -9,6 +9,9 @@ a {
   text-decoration: none;
 }
 
+body {
+  background-color: #FFA515;
+}
 
 nav {
   background-color: #2C2C2C;
@@ -30,8 +33,8 @@ nav {
 }
 
 main {
-  background-color: #FFA515;
-  height: calc(100vh - 60px);
+  max-width: 1200px;
+  margin: 0 auto;
 
   #headings {
     display: grid;
@@ -42,13 +45,15 @@ main {
     padding-top: 6em;
     
     #mixer {
-      font-size: 10em;
+      font-size: calc(5vw + 5em);
       font-weight: 800;
     }
 
     #i-have {
       font-size: 3em;
-      display: none;
+      border-bottom: 5px solid #2C2C2C;
+      line-height: 0.9em;
+      width: 7em;
     }
   }
 
@@ -94,11 +99,8 @@ main {
     grid-column-gap: 100px;
     padding-left: 8em;
     align-items: baseline;
-
-    #right-buttons {
-      display: none;
     }
-  }
+  
 }
 
 
@@ -112,6 +114,13 @@ main {
   width: 80px;
   font-size: 1em;
   cursor: pointer;
+}
+
+.spirit-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #2C2C2C;
+  width: min-content;
 }
 
 .show {
