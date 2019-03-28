@@ -17,7 +17,7 @@ const cocktails = [
   
   {
     name: 'margarita',
-    spirit: ['tequila']
+    spirit: ['vodka']
   },
   
   {
@@ -55,4 +55,7 @@ const cocktails = [
 
 
 
-  //console.log(cocktails[3].name);
+
+
+
+

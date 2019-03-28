@@ -82,6 +82,10 @@ main #grid .container {
   height: 30vh;
 }
 
+main #grid .container p {
+  width: 100%;
+}
+
 main #grid #left p {
   margin-top: 3em;
   margin-bottom: 2em;
