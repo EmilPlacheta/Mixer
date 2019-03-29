@@ -43,17 +43,20 @@ main {
     align-items: baseline;
     padding-left: 8em;
     padding-top: 6em;
+
     
     #mixer {
       font-size: calc(5vw + 5em);
       font-weight: 800;
     }
 
-    #i-have {
+    #i-have, #can-make {
+      align-self: baseline;
+      grid-column: 2 / 3;
       font-size: 3em;
       border-bottom: 5px solid #2C2C2C;
       line-height: 0.9em;
-      width: 7em;
+      width: 10em;
     }
   }
 
@@ -92,7 +95,9 @@ main {
     }
 
     #right {
-      
+      #selection, #results {
+        margin-top: 1em;
+      }
     }
   }
 
@@ -125,6 +130,9 @@ main {
   font-weight: bold;
   color: #2C2C2C;
   width: min-content;
+}
+.hide {
+  display: none;
 }
 
 .show {

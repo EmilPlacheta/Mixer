@@ -62,11 +62,16 @@ main #headings #mixer {
   font-weight: 800;
 }
 
-main #headings #i-have {
+main #headings #i-have, main #headings #can-make {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2 / 3;
   font-size: 3em;
   border-bottom: 5px solid #2C2C2C;
   line-height: 0.9em;
-  width: 7em;
+  width: 10em;
 }
 
 main #grid {
@@ -102,6 +107,10 @@ main #grid #left input {
   font-weight: bold;
 }
 
+main #grid #right #selection, main #grid #right #results {
+  margin-top: 1em;
+}
+
 main #buttons {
   display: -ms-grid;
   display: grid;
@@ -131,6 +140,10 @@ main #buttons {
   width: -webkit-min-content;
   width: -moz-min-content;
   width: min-content;
+}
+
+.hide {
+  display: none;
 }
 
 .show {

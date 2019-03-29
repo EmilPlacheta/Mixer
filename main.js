@@ -1,6 +1,6 @@
 
-
-
+const haveHeading = document.getElementById('i-have');
+const makeHeading = document.getElementById('can-make');
 const selection = document.getElementById('selection');
 const resultsDisplay = document.getElementById('results');
 const inputField = document.getElementById('input');
@@ -10,7 +10,7 @@ const resetBtn = document.getElementById('reset-btn');
 
 
 let test = function() {
-  console.log('logging');
+  console.log('test');
 }
 
 ///////add-btn functionality///////////
@@ -35,6 +35,39 @@ let addSpirit = function() {
  inputField.focus();
 }
 
+const hide = function(el) {
+  el.classList.remove('show');
+  el.classList.add('hide');
+}
+
+const show = function(el) {
+  el.classList.remove('hide');
+  el.classList.add('show');
+}
+
+
+const reset = function() {
+
+  while (resultsDisplay.firstChild) {
+    resultsDisplay.removeChild(resultsDisplay.firstChild);
+  }
+  while (selection.firstChild) {
+    selection.removeChild(selection.firstChild);
+  }
+  
+/*   makeHeading.classList.replace('show', 'hide')
+  haveHeading.classList.replace('hide', 'show');
+  selection.classList.replace('hide', 'show');
+  mixBtn.classList.replace('hide', 'show');
+  resetBtn.classList.replace('show', 'hide'); */
+
+  hide(makeHeading);
+  show(haveHeading);
+  show(selection);
+  show(mixBtn);
+  hide(resetBtn);
+
+}
 
 ///////Add user choice to the Selection List after clicking add, or pressing enter///////////
 
@@ -65,17 +98,24 @@ let grab = function() {
 
   ///...and display:
 
- let newPara = document.createElement('p');
- newPara.setAttribute('class', 'spirit-name');
- resultsDisplay.append(newPara);
+  let newPara = document.createElement('p');
+  newPara.setAttribute('class', 'spirit-name');
+  resultsDisplay.append(newPara);
 
   let resultsArr = [];
- for (let i = 0; i < result.length; i++) {
-  resultsArr.push(newPara.append(document.createTextNode(`${result[i].name}| `)));
- }
- console.log(resultsArr);
+    for (let i = 0; i < result.length; i++) {
+    resultsArr.push(newPara.append(document.createTextNode(`${result[i].name},  `)));
+    }
+
+    hide(haveHeading);
+    hide(selection);
+    hide(mixBtn);
+    show(makeHeading);
+    show(resetBtn);
  }
 
-////Do above `displayCocktails` on button Mix It button click.
-mixBtn.addEventListener('click', displayCocktails)
+////Do above `displayCocktails` on Mix It button click.
+mixBtn.addEventListener('click', displayCocktails);
 
+
+resetBtn.addEventListener('click', reset);
