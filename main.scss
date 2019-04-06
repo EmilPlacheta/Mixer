@@ -104,7 +104,7 @@ main {
   #buttons {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
+    padding-top: 1em;
     grid-column-gap: 100px;
     padding-left: 8em;
     align-items: baseline;

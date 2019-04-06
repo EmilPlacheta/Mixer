@@ -116,6 +116,7 @@ main #buttons {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  padding-top: 1em;
   grid-column-gap: 100px;
   padding-left: 8em;
   -webkit-box-align: baseline;

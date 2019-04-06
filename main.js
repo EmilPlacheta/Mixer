@@ -26,7 +26,7 @@ let addSpirit = function() {
  //... appends it to the right div...
  selection.append(newPara);
  //...appends user ipnout to it..
- newPara.append(document.createTextNode(userInput));
+ newPara.append(document.createTextNode(userInput.toLowerCase()));
 
  //...clears the input.
  inputField.value = '';
@@ -55,12 +55,6 @@ const reset = function() {
     selection.removeChild(selection.firstChild);
   }
   
-/*   makeHeading.classList.replace('show', 'hide')
-  haveHeading.classList.replace('hide', 'show');
-  selection.classList.replace('hide', 'show');
-  mixBtn.classList.replace('hide', 'show');
-  resetBtn.classList.replace('show', 'hide'); */
-
   hide(makeHeading);
   show(haveHeading);
   show(selection);
@@ -86,6 +80,7 @@ let grab = function() {
     for (let i = ingredients.length - 1; i >= 0; i--) {
      grabbedIngredients.push(ingredients[i].textContent);
     }
+  
     return grabbedIngredients;
 }
 

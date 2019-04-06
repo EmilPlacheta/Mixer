@@ -50,7 +50,61 @@ const cocktails = [
     name: 'white russian',
     spirit: ['vodka', 'baileys']
   },
+
+  {
+    name: 'bellini',
+    spirit: ['prosecco']
+  },
+
+  {
+    name: 'bees knees',
+    spirit: ['gin']
+  },
   
+  {
+    name: 'vodka martini',
+    spirit: ['vodka', 'vermouth']
+  },
+
+  {
+    name: 'cosmopolitan',
+    spirit: ['vodka', 'triple sec']
+  },
+
+  {
+    name: 'dark \'n\' stormy',
+    spirit: ['vodka', 'baileys']
+  },
+
+  {
+    name: 'bloody mary',
+    spirit: ['vodka', 'baileys']
+  },
+
+  {
+    name: 'mojito',
+    spirit: ['rum']
+  },
+
+  {
+    name: 'aperol spritz',
+    spirit: ['aperol', 'prosecco']
+  },
+
+  {
+    name: 'dry martini',
+    spirit: ['martini', 'vermouth']
+  },
+
+  {
+    name: 'manhattan',
+    spirit: ['whiskey', 'vermouth']
+  },
+
+  {
+    name: 'negroni',
+    spirit: ['gin', 'campari', 'vermouth']
+  },
   ]
 
 
