@@ -1,6 +1,7 @@
 
 const haveHeading = document.getElementById('i-have');
 const makeHeading = document.getElementById('can-make');
+const sadFaceHeading = document.getElementById('sad-face');
 const selection = document.getElementById('selection');
 const resultsDisplay = document.getElementById('results');
 const inputField = document.getElementById('input');
@@ -56,6 +57,7 @@ const reset = function() {
   }
   
   hide(makeHeading);
+  hide(sadFaceHeading);
   show(haveHeading);
   show(selection);
   show(mixBtn);
@@ -98,6 +100,14 @@ let grab = function() {
   resultsDisplay.append(newPara);
 
   let resultsArr = [];
+  if (availabeSpirits == '') {
+    hide(haveHeading);
+    hide(makeHeading);
+    hide(mixBtn);
+    show(sadFaceHeading);
+    show(resetBtn);
+    resultsArr.push(newPara.append(document.createTextNode(`Something got mixed up, try again?`)))
+  } else {
     for (let i = 0; i < result.length; i++) {
     resultsArr.push(newPara.append(document.createTextNode(`${result[i].name},  `)));
     }
@@ -107,6 +117,7 @@ let grab = function() {
     hide(mixBtn);
     show(makeHeading);
     show(resetBtn);
+  }
  }
 
 ////Do above `displayCocktails` on Mix It button click.

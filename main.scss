@@ -50,12 +50,12 @@ main {
       font-weight: 800;
     }
 
-    #i-have, #can-make {
+    #i-have, #can-make, #sad-face {
       align-self: baseline;
       grid-column: 2 / 3;
       font-size: 3em;
       border-bottom: 5px solid #2C2C2C;
-      line-height: 0.9em;
+      line-height: 1.3em;
       width: 10em;
     }
   }

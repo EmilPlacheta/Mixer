@@ -62,7 +62,7 @@ main #headings #mixer {
   font-weight: 800;
 }
 
-main #headings #i-have, main #headings #can-make {
+main #headings #i-have, main #headings #can-make, main #headings #sad-face {
   -ms-flex-item-align: baseline;
       align-self: baseline;
   -ms-grid-column: 2;
@@ -70,7 +70,7 @@ main #headings #i-have, main #headings #can-make {
   grid-column: 2 / 3;
   font-size: 3em;
   border-bottom: 5px solid #2C2C2C;
-  line-height: 0.9em;
+  line-height: 1.3em;
   width: 10em;
 }
 
