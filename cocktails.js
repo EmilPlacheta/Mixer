@@ -1,51 +1,59 @@
 const cocktails = [
-  
   {
     name: 'daiquiri',
     spirit: ['rum']
   },
-  
+
   {
     name: 'pina colada',
     spirit: ['rum']
   },
-  
+
   {
     name: 'long island ice tea',
     spirit: ['vodka', 'rum', 'gin', 'tequila', 'triple sec']
   },
-  
+
   {
     name: 'margarita',
     spirit: ['vodka']
   },
-  
+
+  {
+    name: 'margarita',
+    spirit: ['vodka']
+  },
+
+  {
+    name: 'classic G&T',
+    spirit: ['gin']
+  },
+
   {
     name: 'pimms',
     spirit: ['pimms']
   },
-  
+
   {
     name: 'sex on the beach',
     spirit: ['peach schnapps', 'vodka']
   },
-  
+
   {
     name: 'old fashioned',
     spirit: ['vodka', 'rum', 'gin', 'tequila', 'triple sec']
   },
-  
+
   {
     name: 'zombie',
     spirit: ['white rum', 'spice rum', 'orange liquer', 'apricot brandy']
   },
-  
-  
+
   {
     name: 'blue lagoon',
     spirit: ['vodka', 'blue curacao liquer']
   },
-  
+
   {
     name: 'white russian',
     spirit: ['vodka', 'baileys']
@@ -60,7 +68,7 @@ const cocktails = [
     name: 'bees knees',
     spirit: ['gin']
   },
-  
+
   {
     name: 'vodka martini',
     spirit: ['vodka', 'vermouth']
@@ -72,7 +80,7 @@ const cocktails = [
   },
 
   {
-    name: 'dark \'n\' stormy',
+    name: "dark 'n' stormy",
     spirit: ['vodka', 'baileys']
   },
 
@@ -104,12 +112,5 @@ const cocktails = [
   {
     name: 'negroni',
     spirit: ['gin', 'campari', 'vermouth']
-  },
-  ]
-
-
-
-
-
-
-
+  }
+];

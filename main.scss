@@ -3,18 +3,18 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  color: #2C2C2C;
+  color: #2c2c2c;
 }
 a {
   text-decoration: none;
 }
 
 body {
-  background-color: #FFA515;
+  background-color: #ffa515;
 }
 
 nav {
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   height: 60px;
   ul {
     display: flex;
@@ -44,17 +44,18 @@ main {
     padding-left: 8em;
     padding-top: 6em;
 
-    
     #mixer {
       font-size: calc(5vw + 5em);
       font-weight: 800;
     }
 
-    #i-have, #can-make, #sad-face {
+    #i-have,
+    #can-make,
+    #sad-face {
       align-self: baseline;
       grid-column: 2 / 3;
       font-size: 3em;
-      border-bottom: 5px solid #2C2C2C;
+      border-bottom: 5px solid #2c2c2c;
       line-height: 1.3em;
       width: 10em;
     }
@@ -75,7 +76,6 @@ main {
     }
 
     #left {
-
       p {
         margin-top: 3em;
         margin-bottom: 2em;
@@ -86,18 +86,25 @@ main {
         width: 50%;
         background: none;
         border-style: none;
-        border-bottom: 2px solid #864E0B;
+        border-bottom: 2px solid #864e0b;
         color: white;
         font-size: 1.5em;
         font-weight: bold;
       }
-
     }
 
     #right {
-      #selection, #results {
+      #selection,
+      #results {
         margin-top: 1em;
       }
+    }
+    .about {
+      margin: 2rem 0 10rem 0;
+    }
+
+    .about-img {
+      justify-self: center;
     }
   }
 
@@ -108,15 +115,11 @@ main {
     grid-column-gap: 100px;
     padding-left: 8em;
     align-items: baseline;
-    }
-  
+  }
 }
 
-
-
-
 .btn {
-  background-color: #2C2C2C;
+  background-color: #2c2c2c;
   border: none;
   color: white;
   height: 35px;
@@ -128,7 +131,7 @@ main {
 .spirit-name {
   font-size: 1.5em;
   font-weight: bold;
-  color: #2C2C2C;
+  color: #2c2c2c;
   width: min-content;
 }
 .hide {
